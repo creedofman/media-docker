@@ -12,7 +12,6 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=${TIMEZONE}
-      - TRANSMISSION_RPC_HOST_WHITELIST=*.${DOMAIN}
     networks:
       - proxied
       - internal

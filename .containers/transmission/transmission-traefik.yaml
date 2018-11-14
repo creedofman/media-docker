@@ -8,3 +8,5 @@ services:
       - traefik.port=9091
     expose:
       - 9091
+      - 51413
+      - 51413/udp
