@@ -5,8 +5,8 @@ services:
     container_name: ubooquity
     volumes:
       - ${BASE_DIR}/ubooquity/config:/config
-      - ${MEDIA_DIR}/Books:/books
-      - ${MEDIA_DIR}/Comics:/comics
+      - ${MEDIA_DIR}/books:/books
+      - ${MEDIA_DIR}/comics:/comics
     environment:
       - PUID=1000
       - PGID=1000

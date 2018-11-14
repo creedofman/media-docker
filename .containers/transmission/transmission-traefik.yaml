@@ -1,0 +1,10 @@
+services:
+  # Transmission
+  transmission:
+    labels:
+      - traefik.backend=transmission
+      - traefik.frontend.rule=Host:transmission.${DOMAIN}
+      - traefik.docker.network=proxied
+      - traefik.port=9091
+    expose:
+      - 9091

@@ -5,7 +5,7 @@ services:
     container_name: mylar
     volumes:
       - ${BASE_DIR}/mylar/config:/config
-      - ${MEDIA_DIR}/Comics:/comics
+      - ${MEDIA_DIR}/comics:/comics
       - ${DOWNLOAD_DIR}:/downloads
     environment:
       - PUID=1000

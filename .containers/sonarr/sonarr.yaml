@@ -3,9 +3,9 @@ services:
   sonarr:
     image: linuxserver/sonarr:latest
     container_name: sonarr
-    volumes: 
+    volumes:
       - ${BASE_DIR}/sonarr/config:/config
-      - ${MEDIA_DIR}/TV:/tv
+      - ${MEDIA_DIR}/tv:/tv
       - ${DOWNLOAD_DIR}:/downloads
     environment:
       - PUID=1000
